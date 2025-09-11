@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import BottomNav from "./pages/BottomNav";
+import BottomNav from "./components/BottomNav";
 import { GlobalStyle } from "./styles/GlobalStyle";
 
 const Wrapper = styled.div`
@@ -15,7 +14,7 @@ const Box = styled.div`
   height: 812px;
   border: 1px solid #000;
   display: flex;
-  align-items: centeer;
+  align-items: flex-end;
   justify-content: center;
   font-size: 2rem;
 `;
