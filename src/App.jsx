@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import BottomNav from "./components/BottomNav";
 import { GlobalStyle } from "./styles/GlobalStyle";
+import LoadingPage from "./pages/loadingPage";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
 
 const Wrapper = styled.div`
   display: flex;
@@ -25,10 +28,14 @@ function App() {
       <GlobalStyle />
       <Wrapper>
         <Box>
-          <BottomNav />
+          <Routes>
+            <Route path="/" element={<LoadingPage />} />
+            <Route path="/home" element={<HomePage />} />
+          </Routes>
         </Box>
       </Wrapper>
     </>
   );
 }
+
 export default App;

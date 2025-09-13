@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 const NavWrapper = styled.nav`
   display: flex;
   justify-content: space-between;
