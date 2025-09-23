@@ -1,11 +1,11 @@
 import { Outlet } from "react-router";
-import BottomBar from "./components/Bottonmbar";
+import { GlobalStyle } from "./styles/GlobalStyle";
 
 function App() {
   return (
     <div>
+      <GlobalStyle />
       <Outlet />
-      <BottomBar />
     </div>
   );
 }
