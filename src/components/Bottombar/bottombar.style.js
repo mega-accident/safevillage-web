@@ -9,6 +9,7 @@ export const BottomBarContainer = styled.div`
   height: 12rem;
   border-radius: 2rem 2rem 0 0;
   box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
 `;
 
 export const Tab = styled(Link)`
