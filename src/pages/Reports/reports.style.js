@@ -1,8 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding: 4rem;
+  padding: 1rem;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 `;
 
 export const Header = styled.div`
@@ -11,29 +14,29 @@ export const Header = styled.div`
   align-items: center;
   gap: 2rem;
   width: 100%;
-  height: 4rem;
-  font-size: 3rem;
+  height: 2rem;
   font-weight: 500;
+  font-size: 1.25rem;
   svg {
     cursor: pointer;
   }
   :nth-child(2) {
-    color: white;
+    color: transparent;
   }
 `;
 
 export const Content = styled.div`
-  padding: 4rem 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
-  gap: 3rem;
+  gap: 1rem;
 `;
 
 export const Title = styled.h1`
-  font-size: 4rem;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 1.25rem;
 `;
 
 export const Image = styled.div`
@@ -49,13 +52,13 @@ export const Image = styled.div`
 `;
 
 export const Location = styled.div`
-  font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 0.875rem;
   :nth-child(1) {
     font-weight: 600;
-    min-width: 10rem;
+    min-width: 3rem;
   }
 `;
 
@@ -83,16 +86,15 @@ export const DangerButton = styled.button`
   justify-content: center;
   gap: 2rem;
   position: fixed;
-  bottom: 8rem;
+  bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 60rem;
-  height: 9rem;
-  border-radius: 3rem;
+  width: 20rem;
+  height: 3.5rem;
+  border-radius: 1rem;
   border: none;
   background-color: #f7710a;
   color: white;
-  font-size: 3rem;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.2s;

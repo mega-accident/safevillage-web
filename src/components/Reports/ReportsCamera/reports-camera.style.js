@@ -18,15 +18,15 @@ export const Video = styled.video`
 
 export const CaptureButtonWrapper = styled.div`
   position: absolute;
-  bottom: 4rem;
+  bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
 `;
 
 export const CaptureButton = styled.button`
-  width: 8rem;
-  height: 8rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   border: 4px solid white;
   background-color: transparent;
@@ -42,8 +42,8 @@ export const CaptureButton = styled.button`
 `;
 
 export const CaptureButtonInner = styled.div`
-  width: 6.5rem;
-  height: 6.5rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   background-color: white;
 `;

@@ -13,12 +13,12 @@ export const FloatingButton = styled(Link)`
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 3rem;
-  right: 3rem;
-  width: 12rem;
-  height: 12rem;
+  bottom: 1rem;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
-  border: 8px solid white;
+  border: 2px solid white;
   background-color: #f7710a;
   color: white;
   padding: 0;

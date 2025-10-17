@@ -5,38 +5,38 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8rem;
+  gap: 4rem;
   width: 100%;
   height: 100%;
   background-color: white;
 `;
 
 export const Text = styled.p`
-  font-size: 4rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: black;
   text-align: center;
 
   span {
-    font-size: 4rem;
+    font-size: 1.5rem;
     color: #f7710a;
   }
 `;
 
 export const ReviewButton = styled.button`
   position: absolute;
-  bottom: 10rem;
-  width: 60rem;
-  height: 9rem;
-  border-radius: 3rem;
+  bottom: 2rem;
+  width: 20rem;
+  height: 3rem;
+  font-size: 1rem;
+  border-radius: 1rem;
   border: none;
   background-color: #f7710a;
   color: white;
-  font-size: 3rem;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.2s;
-
+  z-index: 9999;
   &:hover {
     background-color: #e56609;
   }

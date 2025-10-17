@@ -4,12 +4,12 @@ export const DangerDegreeLabel = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 8rem;
-  height: 4rem;
-  border-radius: 1rem;
+  width: 3.25rem;
+  height: 2rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.5rem;
   text-align: center;
-  padding: 1rem 0.5rem;
-  font-size: 2rem;
+  font-size: 0.75rem;
   background-color: ${(props) =>
     props.$degree === '하'
       ? '#35B644'
@@ -23,16 +23,7 @@ export const DangerDegreeLabel = styled.div`
   color: white;
 `;
 
-export const StatusLabel = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 8rem;
-  height: 4rem;
-  border-radius: 1rem;
-  text-align: center;
-  padding: 1rem 0.5rem;
-  font-size: 2rem;
+export const StatusLabel = styled(DangerDegreeLabel)`
   background-color: ${(props) =>
     props.$status === '대기'
       ? '#8A8A8A'
@@ -43,5 +34,4 @@ export const StatusLabel = styled.div`
           : props.$status === '처리완료'
             ? '#35B644'
             : '#999999'};
-  color: white;
 `;

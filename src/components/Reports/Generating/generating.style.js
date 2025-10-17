@@ -5,25 +5,26 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8rem;
+  gap: 2rem;
   width: 100%;
   height: 100%;
   background-color: white;
 `;
 
 export const Text = styled.p`
-  font-size: 4rem;
   font-weight: 600;
   color: black;
   text-align: center;
-
+  font-size: 1.5rem;
   span {
-    font-size: 4rem;
     color: #f7710a;
+    font-size: 1.5rem;
   }
 `;
 
 export const WaitingText = styled.p`
-  font-size: 3rem;
   color: #646464;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 4rem;
 `;

@@ -11,7 +11,7 @@ function BottomBar() {
     <S.BottomBarContainer>
       {/* 목록 탭 */}
       <S.Tab to={'/list'} $active={location.pathname.startsWith('/list')}>
-        <ListIcon width={80} height={80} />
+        <ListIcon width={28} height={28} />
         목록
       </S.Tab>
 
@@ -24,12 +24,12 @@ function BottomBar() {
           location.pathname.startsWith('/reports') // 신고 상세 페이지도 홈 탭으로 간주
         }
       >
-        <MapIcon width={80} height={80} />홈
+        <MapIcon width={28} height={28} />홈
       </S.Tab>
 
       {/* 프로필 탭 */}
       <S.Tab to={'/profile'} $active={location.pathname.startsWith('/profile')}>
-        <ProfileIcon width={80} height={80} />
+        <ProfileIcon width={28} height={28} />
         프로필
       </S.Tab>
     </S.BottomBarContainer>

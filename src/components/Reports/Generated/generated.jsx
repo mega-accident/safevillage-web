@@ -7,7 +7,7 @@ export default function Generated({ onClick }) {
       <S.Text>
         AI가 신고를 <span>모두 작성했어요!</span>
       </S.Text>
-      <GeneratedIcon width={400} height={400} />
+      <GeneratedIcon width={200} height={200} />
       <S.ReviewButton onClick={onClick}>신고 검토하기</S.ReviewButton>
     </S.Container>
   );

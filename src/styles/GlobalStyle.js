@@ -79,7 +79,31 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   font-family: 'Pretendard', -apple-system;
+  background-color: #f5f5f5;
 }
+
+/* 데스크톱 425 x 860 */
+#root {
+  max-width: 425px;
+  min-width: 425px;
+  max-height: 861px;
+  min-height: 861px;
+  width: 425px;
+  height: 861px;
+  margin: 0 auto;
+  position: relative;
+  overflow: auto;
+}
+
+/* 모바일 전체 화면 */
+@media screen and (max-width: 425px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    box-shadow: none;
+  }
+}
+
 ol, ul {
   list-style: none;
 }

@@ -13,7 +13,6 @@ export default function ReportsPage() {
 
   // 상태 관리
   const [report, setReport] = useState(null); // 신고 데이터
-  const [loading, setLoading] = useState(true); // 로딩 상태
 
   // 컴포넌트가 마운트되면 신고 데이터 불러오기
   useEffect(() => {
@@ -45,23 +44,11 @@ export default function ReportsPage() {
         console.error('신고 조회 실패:', error);
         alert('신고를 불러올 수 없습니다.');
         navigate('/'); // 에러 시 홈으로 이동
-      } finally {
-        setLoading(false); // 로딩 완료
       }
     };
 
     fetchReport();
   }, [id, navigate]); // id나 navigate가 변경될 때마다 실행
-
-  // 로딩 중일 때
-  if (loading) {
-    return (
-      <S.Container>
-        <S.Header>신고 상세</S.Header>
-        <S.Content>로딩 중...</S.Content>
-      </S.Container>
-    );
-  }
 
   // 데이터가 없을 때
   if (!report) return null;
@@ -70,7 +57,7 @@ export default function ReportsPage() {
     <S.Container>
       <S.Header>
         {/* 뒤로가기 버튼 */}
-        <LeftArrow width={60} height={60} onClick={() => navigate('/')} />
+        <LeftArrow width={24} height={24} onClick={() => navigate('/')} />
         신고 상세
         <LeftArrow />
       </S.Header>
@@ -84,7 +71,10 @@ export default function ReportsPage() {
         {/* 신고 사진 (있을 경우에만 표시) */}
         {report.images && report.images.length > 0 && (
           <S.Image>
-            <img src={report.images[0]} alt="신고 이미지" />
+            <img
+              src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbhPaCK%2FbtqyN3j88ke%2FAAAAAAAAAAAAAAAAAAAAAPmh41APp7EP0L8liM-ewdFXgIV7EaqgTlBQk_CLKGxN%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1761922799%26allow_ip%3D%26allow_referer%3D%26signature%3DD7lru9r8cE5Duct%252FtT4OKn7zmUA%253D"
+              alt="신고 이미지"
+            />
           </S.Image>
         )}
 
@@ -119,8 +109,12 @@ export default function ReportsPage() {
 
         {/* 위험해요 버튼 (위험도 카운트 표시) */}
         <S.DangerButton>
-          <DangerIcon width={52} height={52} />
-          위험해요 ({report.dangerCount})
+          <div
+            style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}
+          >
+            <DangerIcon width={24} height={24} />
+            위험해요 ({report.dangerCount})
+          </div>
         </S.DangerButton>
       </S.Content>
     </S.Container>

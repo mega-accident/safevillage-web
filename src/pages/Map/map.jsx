@@ -6,7 +6,7 @@ export default function MapPage() {
     <S.Container>
       map
       <S.FloatingButton to="/reports/create">
-        <EmergencyBtn width={93} height={99} />
+        <EmergencyBtn width={31} height={33} />
       </S.FloatingButton>
     </S.Container>
   );

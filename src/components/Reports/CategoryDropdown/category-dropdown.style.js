@@ -7,12 +7,11 @@ export const Container = styled.div`
 
 export const DropdownButton = styled.button`
   width: 100%;
-  height: 8rem;
-  padding: 0 3rem;
+  height: 4rem;
+  padding: 1rem 1.5rem;
   border: 2px solid #c4c4c4;
-  border-radius: 2rem;
+  border-radius: 1rem;
   background-color: #fff;
-  font-size: 2.5rem;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -26,7 +25,7 @@ export const SelectedText = styled.span`
 
 export const Arrow = styled.span`
   color: #666;
-  font-size: 1.5rem;
+  font-size: 1rem;
   transition: transform 0.2s;
   transform: ${(props) => (props.$isOpen ? 'rotate(180deg)' : 'rotate(0)')};
 `;
@@ -38,19 +37,18 @@ export const DropdownList = styled.ul`
   width: 100%;
   background: #fff;
   border: 2px solid #c4c4c4;
-  border-radius: 2rem;
+  border-radius: 1rem;
   list-style: none;
-  padding: 1rem 0;
+
   margin: 0;
   max-height: 30rem;
   overflow-y: auto;
-  z-index: 100;
+  z-index: 20;
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.1);
 `;
 
 export const DropdownItem = styled.li`
-  padding: 2.5rem 3rem;
-  font-size: 2.5rem;
+  padding: 1.5rem 1rem;
   cursor: pointer;
   background-color: ${(props) => (props.$isSelected ? '#f0f0f0' : '#fff')};
   color: #333;

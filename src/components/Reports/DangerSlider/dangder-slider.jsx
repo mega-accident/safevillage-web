@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const STAGES = ['하', '중', '상', '최상'];
 const COLORS = ['#35B644', '#EDBE00', '#F7710A', '#E43B3B'];
-const PERCENTS = [2, 33.33, 64, 98];
+const PERCENTS = [3, 33.33, 64, 97];
 
 const Container = styled.div`
   width: 100%;
@@ -10,27 +10,26 @@ const Container = styled.div`
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
-  padding: 2rem;
+  gap: 1rem;
+  padding: 0 1rem;
 `;
 
 const StageLabels = styled.div`
   display: flex;
   justify-content: space-between;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 600;
-  /* padding: 0 0.4rem; */
 `;
 
 const StageLabel = styled.span`
   color: ${(props) => (props.$active ? props.$color : '#9ca3af')};
-  font-size: ${(props) => (props.$active ? '2.5rem' : '2rem')};
+  font-size: ${(props) => (props.$active ? '1rem' : '0.75rem')};
   transition: color 150ms;
 `;
 
 const SliderWrapper = styled.div`
   position: relative;
-  height: 3rem;
+  height: 1rem;
   background: #d1d5db;
   border-radius: 100px;
 
@@ -49,13 +48,13 @@ const SliderWrapper = styled.div`
     content: '';
     position: absolute;
     top: 50%;
-    left: calc(${(props) => props.$percent}% - 3rem);
-    width: 6rem;
-    height: 6rem;
+    left: ${(props) => props.$percent}%;
+    width: 2rem;
+    height: 2rem;
     background: white;
     border-radius: 50%;
     box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.15);
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
     transition: all 150ms;
     z-index: 20;
     pointer-events: none;
@@ -75,8 +74,8 @@ const StageMarker = styled.div`
   position: absolute;
   top: 50%;
   left: ${(props) => props.$percent}%;
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 0.5rem;
+  height: 0.5rem;
   background: #9ca3af;
   border-radius: 50%;
   transform: translate(-50%, -50%);
