@@ -1,11 +1,16 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding: 1rem;
-  height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
   gap: 2rem;
+  padding-bottom: 6rem;
+  overflow-y: auto;
 `;
 
 export const Header = styled.div`
@@ -30,7 +35,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 100%;
+  /* height: 100%; */
   gap: 1rem;
 `;
 
@@ -41,7 +46,7 @@ export const Title = styled.h1`
 
 export const Image = styled.div`
   width: 100%;
-  height: 36rem;
+  height: 12rem;
   border-radius: 2rem;
   overflow: hidden;
   img {
@@ -53,7 +58,7 @@ export const Image = styled.div`
 
 export const Location = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   font-size: 0.875rem;
   :nth-child(1) {
@@ -65,7 +70,7 @@ export const Location = styled.div`
 export const LocationBox = styled.div`
   display: flex;
   border-radius: 2rem;
-  height: 24rem;
+  height: 12rem;
   border: 1px solid #c4c4c4;
   background-color: #f5f5f5;
 `;
@@ -90,7 +95,7 @@ export const DangerButton = styled.button`
   left: 50%;
   transform: translateX(-50%);
   width: 20rem;
-  height: 3.5rem;
+  height: 3rem;
   border-radius: 1rem;
   border: none;
   background-color: #f7710a;

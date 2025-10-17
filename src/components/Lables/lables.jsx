@@ -5,8 +5,8 @@ export const DangerDegreeLabel = styled.div`
   justify-content: center;
   align-items: center;
   width: 3.25rem;
-  height: 2rem;
-  padding: 0.4rem 0.75rem;
+  height: 1.75rem;
+  padding: 0.2rem 0.75rem;
   border-radius: 0.5rem;
   text-align: center;
   font-size: 0.75rem;

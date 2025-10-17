@@ -8,7 +8,7 @@ export const EditingContainer = styled.div`
   min-height: 100vh;
   background-color: #f5f5f5;
   padding: 1rem;
-  padding-bottom: 8rem;
+  padding-bottom: 16rem;
   overflow-y: auto;
   gap: 1rem;
   font-size: 1rem;
@@ -100,6 +100,7 @@ export const SubmitButton = styled.button`
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.2s;
+  z-index: 100; /* DangerSlider 위에 표시 */
 
   &:hover {
     background-color: #e56609;

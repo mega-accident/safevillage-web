@@ -26,49 +26,63 @@ time, mark, audio, video {
 }
 @font-face {
     font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+    src: url('/fonts/Pretendard-Thin.woff2') format('woff2');
     font-weight: 100;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+    src: url('/fonts/Pretendard-ExtraLight.woff2') format('woff2');
     font-weight: 200;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    src: url('/fonts/Pretendard-Light.woff2') format('woff2');
     font-weight: 300;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    src: url('/fonts/Pretendard-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('/fonts/Pretendard-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('/fonts/Pretendard-SemiBold.woff2') format('woff2');
     font-weight: 600;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    src: url('/fonts/Pretendard-Bold.woff2') format('woff2');
     font-weight: 700;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    src: url('/fonts/Pretendard-ExtraBold.woff2') format('woff2');
     font-weight: 800;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+    src: url('/fonts/Pretendard-Black.woff2') format('woff2');
     font-weight: 900;
     font-display: swap;
 }

@@ -71,10 +71,7 @@ export default function ReportsPage() {
         {/* 신고 사진 (있을 경우에만 표시) */}
         {report.images && report.images.length > 0 && (
           <S.Image>
-            <img
-              src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbhPaCK%2FbtqyN3j88ke%2FAAAAAAAAAAAAAAAAAAAAAPmh41APp7EP0L8liM-ewdFXgIV7EaqgTlBQk_CLKGxN%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1761922799%26allow_ip%3D%26allow_referer%3D%26signature%3DD7lru9r8cE5Duct%252FtT4OKn7zmUA%253D"
-              alt="신고 이미지"
-            />
+            <img src={report.images[0]} alt="신고 이미지" />
           </S.Image>
         )}
 
