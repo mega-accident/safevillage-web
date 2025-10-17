@@ -100,7 +100,14 @@ body {
   #root {
     width: 100vw;
     height: 100vh;
+    height: 100dvh;
     box-shadow: none;
+    /* iOS Safe Area 처리 */
+    padding-top: env(safe-area-inset-top);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    box-sizing: border-box;
   }
 }
 
